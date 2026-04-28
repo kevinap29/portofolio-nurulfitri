@@ -45,16 +45,15 @@ A premium, modern portfolio website for **Nurul Fitri**, showcasing her expertis
 ### 3.6. Dark/Light Mode
 
 - Premium theme switcher with smooth transitions.
+- [ ] 4. Technical Specification
 
-## 4. Technical Specification
-
-- **Framework**: Svelte 5 (Runes) + SvelteKit.
-- **Styling**: Tailwind CSS v4 (CSS-first configuration).
-- **UI Components**: `shadcn-svelte` (built with Bits UI).
-- **Icons**: `lucide-svelte`.
-- **Localization**: Inlang/Paraglide-JS.
-- **Deployment**: Static Site Generation (SSG) for Vercel (lebih baik mana SSG atau SSR untuk projek web portofolio ini?).
-- **Type Safety**: TypeScript (Strict mode).
+- [ ] **Framework**: Svelte 5 (Runes) + SvelteKit.
+- [ ] **Styling**: Tailwind CSS v4 (CSS-first configuration).
+- [ ] **UI Components**: `shadcn-svelte` (built with Bits UI).
+- [ ] **Icons**: `lucide-svelte`.
+- [ ] **Localization**: Inlang/Paraglide-JS.
+- [ ] **Deployment**: Static Site Generation (SSG) for Vercel (lebih baik mana SSG atau SSR untuk projek web portofolio ini?).
+- [ ] **Type Safety**: TypeScript (Strict mode).
 
 ## 5. Design Aesthetics
 
