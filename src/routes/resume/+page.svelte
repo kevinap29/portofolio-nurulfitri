@@ -5,8 +5,21 @@
 	import { Mail, Phone, MapPin, Printer, ArrowLeft } from 'lucide-svelte';
 	import LinkedIn from '$lib/components/icons/LinkedIn.svelte';
 	import SEO from '$lib/components/SEO.svelte';
+	import { onMount } from 'svelte';
 
 	const { profile, experience, education, skills, contact } = portfolioContent;
+
+	let containerWidth = $state(0);
+	let scale = $derived(containerWidth > 0 ? Math.min(1, (containerWidth - 32) / 794) : 1);
+
+	onMount(() => {
+		const updateWidth = () => {
+			containerWidth = window.innerWidth;
+		};
+		updateWidth();
+		window.addEventListener('resize', updateWidth);
+		return () => window.removeEventListener('resize', updateWidth);
+	});
 
 	function printResume() {
 		window.print();
