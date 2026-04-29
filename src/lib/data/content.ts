@@ -8,6 +8,10 @@ export const portfolioContent: Content = {
 			id: 'Saya merupakan profesional di bidang administrasi marketing retail dengan pengalaman dalam mendukung aktivitas penjualan, pengelolaan stok, serta koordinasi distribusi barang ke berbagai toko. Terbiasa bekerja dengan detail tinggi dalam mengelola data, menjadwalkan pengiriman, serta berkomunikasi dengan supplier, customer dan tim sales.\n\nSaya memiliki kemampuan dalam mengolah data penjualan, membuat laporan, serta memastikan ketersediaan stok berjalan optimal untuk mendukung pencapaian target bisnis. Selain itu, saya juga aktif dalam mendukung implementasi program promosi.',
 			en: 'I am a retail marketing administration professional with experience in supporting sales activities, stock management, and coordinating goods distribution to various stores. Accustomed to working with high detail in managing data, scheduling shipments, and communicating with suppliers, customers, and sales teams.\n\nI have the ability to process sales data, create reports, and ensure optimal stock availability to support business target achievement. Additionally, I am active in supporting the implementation of promotional programs.'
 		},
+		summary: {
+			id: 'Profesional administrasi marketing retail dengan spesialisasi dalam manajemen stok, koordinasi distribusi, dan dukungan operasional penjualan.',
+			en: 'Retail marketing administration professional specializing in inventory management, distribution coordination, and sales operational support.'
+		},
 		avatarUrl: '/images/avatar.jpg',
 		socials: [
 			{

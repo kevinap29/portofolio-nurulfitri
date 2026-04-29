@@ -10,6 +10,7 @@ export const ProfileSchema = z.object({
 	name: z.string(),
 	headline: z.string(),
 	bio: z.record(z.string(), z.string()), // { id: "...", en: "..." }
+	summary: z.record(z.string(), z.string()), // Short bio for Hero section
 	avatarUrl: z.string().optional(),
 	socials: z.array(SocialSchema),
 	resumeUrl: z.string().optional()

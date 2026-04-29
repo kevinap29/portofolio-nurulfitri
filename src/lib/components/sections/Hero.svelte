@@ -36,7 +36,7 @@
 		</h2>
 
 		<p class="text-lg text-foreground-muted mb-8 leading-relaxed">
-			{profile.bio[i18n.current]}
+			{profile.summary[i18n.current]}
 		</p>
 
 		<div class="flex flex-wrap items-center justify-center lg:justify-start gap-4">
