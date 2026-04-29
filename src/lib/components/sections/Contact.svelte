@@ -60,7 +60,7 @@
 			<div class="lg:col-span-2 space-y-6">
 				<div class="grid grid-cols-1 gap-4">
 					<!-- Email Card -->
-					<div class="bg-surface border border-surface-border p-6 rounded-sm shadow-sm group">
+					<div class="bg-surface border border-surface-border p-6 rounded-sm shadow-sm hover:shadow-lg hover:border-primary/50 transition-all duration-300 group">
 						<div class="flex items-center gap-4">
 							<div class="p-3 bg-primary/10 text-primary rounded-sm shrink-0">
 								<Mail class="w-6 h-6" />
@@ -84,7 +84,7 @@
 					</div>
 
 					<!-- Phone/WhatsApp Card -->
-					<div class="bg-surface border border-surface-border p-6 rounded-sm shadow-sm group">
+					<div class="bg-surface border border-surface-border p-6 rounded-sm shadow-sm hover:shadow-lg hover:border-primary/50 transition-all duration-300 group">
 						<div class="flex items-center gap-4">
 							<div class="p-3 bg-green-500/10 text-green-600 rounded-sm shrink-0">
 								<Phone class="w-6 h-6" />
@@ -122,7 +122,7 @@
 					</div>
 
 					<!-- Location Card -->
-					<div class="bg-surface border border-surface-border p-6 rounded-sm shadow-sm group">
+					<div class="bg-surface border border-surface-border p-6 rounded-sm shadow-sm hover:shadow-lg hover:border-primary/50 transition-all duration-300 group">
 						<div class="flex items-center gap-4">
 							<div class="p-3 bg-accent/10 text-accent rounded-sm shrink-0">
 								<MapPin class="w-6 h-6" />
@@ -139,7 +139,7 @@
 			</div>
 
 			<!-- Contact Form (3 columns) -->
-			<div class="lg:col-span-3 bg-surface border border-surface-border p-8 rounded-sm shadow-sm">
+			<div class="lg:col-span-3 bg-surface border border-surface-border p-8 rounded-sm shadow-sm hover:shadow-lg hover:border-primary/50 transition-all duration-300">
 				<form onsubmit={handleSubmit} class="space-y-6">
 					<!-- Hidden Web3Forms Key (User should replace this) -->
 					<input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">

@@ -30,7 +30,7 @@
 					</div>
 
 					<!-- Content Card -->
-					<div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-surface border border-surface-border p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow">
+					<div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-surface border border-surface-border p-6 rounded-sm shadow-sm hover:shadow-lg hover:border-primary/50 transition-all duration-300">
 						<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
 							<h3 class="text-xl font-bold text-foreground">{item.role[i18n.current]}</h3>
 							<div class="flex items-center gap-1.5 text-sm font-medium text-primary bg-primary/5 px-3 py-1 rounded-full">

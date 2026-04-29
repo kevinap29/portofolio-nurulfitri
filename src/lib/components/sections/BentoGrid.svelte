@@ -10,7 +10,7 @@
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[minmax(200px,auto)]">
 		
 		<!-- About Me Card (Spans 2 columns on medium screens) -->
-		<div class="md:col-span-2 bg-surface border border-surface-border rounded-sm p-8 shadow-sm hover:shadow-md transition-shadow duration-300 group">
+		<div class="md:col-span-2 bg-surface border border-surface-border rounded-sm p-8 shadow-sm hover:shadow-lg hover:border-primary/50 transition-all duration-300 group">
 			<div class="flex items-center gap-3 mb-4">
 				<div class="p-2 bg-primary/10 text-primary rounded-sm group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
 					<User class="w-6 h-6" />
@@ -23,7 +23,7 @@
 		</div>
 
 		<!-- Education Card -->
-		<div class="bg-surface border border-surface-border rounded-sm p-8 shadow-sm hover:shadow-md transition-shadow duration-300 group">
+		<div class="bg-surface border border-surface-border rounded-sm p-8 shadow-sm hover:shadow-lg hover:border-primary/50 transition-all duration-300 group">
 			<div class="flex items-center gap-3 mb-4">
 				<div class="p-2 bg-accent/10 text-accent rounded-sm group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
 					<BookOpen class="w-6 h-6" />
@@ -43,7 +43,7 @@
 		</div>
 
 		<!-- Skills Card (Spans full width) -->
-		<div class="md:col-span-3 bg-surface border border-surface-border rounded-sm p-8 shadow-sm hover:shadow-md transition-shadow duration-300 group">
+		<div class="md:col-span-3 bg-surface border border-surface-border rounded-sm p-8 shadow-sm hover:shadow-lg hover:border-primary/50 transition-all duration-300 group">
 			<div class="flex items-center gap-3 mb-6">
 				<div class="p-2 bg-primary/10 text-primary rounded-sm group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
 					<Code2 class="w-6 h-6" />
