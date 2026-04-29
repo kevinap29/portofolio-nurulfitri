@@ -21,64 +21,85 @@
 <style>
 	@media print {
 		:global(body) {
-			background-color: white !important;
-			margin: 0 !important;
-			padding: 0 !important;
-			-webkit-print-color-adjust: exact;
-			print-color-adjust: exact;
+			background: white !important;
+			-webkit-print-color-adjust: exact !important;
+			print-color-adjust: exact !important;
 		}
-
-		.no-print {
-			display: none !important;
-		}
-
 		@page {
 			size: A4;
 			margin: 0;
 		}
-
+		.no-print {
+			display: none !important;
+		}
 		.resume-paper {
+			transform: none !important;
 			width: 210mm !important;
 			margin: 0 !important;
-			padding: 0 !important;
 			box-shadow: none !important;
 			border: none !important;
-			min-height: auto !important;
-			height: auto !important;
 		}
-
 		.section-avoid {
-			break-inside: avoid !important;
+			break-inside: avoid;
+		}
+	}
+
+	.resume-viewport {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		overflow-x: hidden;
+	}
+
+	@media (max-width: 210mm) {
+		.resume-paper {
+			transform: scale(var(--scale));
+			transform-origin: top center;
+		}
+		/* Adjust container height to account for scaled content */
+		.resume-viewport {
+			height: calc(297mm * var(--scale) + 40px);
 		}
 	}
 </style>
 
-<!-- Top Bar (Hidden in Print) -->
-<div class="no-print sticky top-0 z-50 w-full bg-background/80 backdrop-blur border-b border-border py-3">
-	<div class="container mx-auto px-4 flex justify-between items-center">
-		<a href="/" class="flex items-center gap-2 text-sm font-medium hover:text-primary transition-colors">
-			<ArrowLeft class="w-4 h-4" />
+<div class="no-print bg-slate-900 text-white py-4 px-6 sticky top-0 z-50 shadow-xl border-b border-white/10">
+	<div class="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+		<a href="/" class="flex items-center gap-2 text-sm font-bold hover:text-primary transition-colors group">
+			<ArrowLeft class="w-4 h-4 transition-transform group-hover:-translate-x-1" />
 			{i18n.current === 'id' ? 'Kembali ke Portofolio' : 'Back to Portfolio'}
 		</a>
-		<div class="flex items-center gap-4">
-			<div class="text-[10px] text-right leading-tight hidden sm:block">
-				<p class="text-primary font-bold">{i18n.current === 'id' ? 'Tips Cetak:' : 'Print Tips:'}</p>
-				<p class="text-muted-foreground">{i18n.current === 'id' ? '1. Matikan "Headers & Footers"' : '1. Turn off "Headers & Footers"'}</p>
-				<p class="text-muted-foreground">{i18n.current === 'id' ? '2. Setel Margin ke "None"' : '2. Set Margins to "None"'}</p>
+		
+		<div class="flex items-center gap-6">
+			<div class="hidden lg:flex items-center gap-3 text-[10px] uppercase tracking-widest text-white/40">
+				<div class="flex items-center gap-1.5">
+					<div class="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></div>
+					<span>A4 Optimized</span>
+				</div>
+				<span class="opacity-20">|</span>
+				<span>Margins: None</span>
 			</div>
-			<Button onclick={printResume} variant="primary" size="sm" class="gap-2">
-				<Printer class="w-4 h-4" />
-				{i18n.current === 'id' ? 'Cetak / Simpan PDF' : 'Print / Save as PDF'}
+
+			<Button 
+				onclick={() => window.print()} 
+				variant="primary" 
+				class="bg-accent hover:bg-accent/90 text-white font-black uppercase tracking-tighter px-8 shadow-lg shadow-accent/20"
+			>
+				<Printer class="w-4 h-4 mr-2" />
+				{i18n.current === 'id' ? 'Cetak / Simpan PDF' : 'Print / Save PDF'}
 			</Button>
 		</div>
 	</div>
 </div>
 
 <!-- Resume Container -->
-<div class="min-h-screen bg-surface-muted py-4 sm:py-8 no-print:bg-surface-muted print:bg-white print:p-0">
+<div 
+	class="resume-viewport min-h-screen bg-surface-muted py-4 sm:py-8 no-print:bg-surface-muted print:bg-white print:p-0"
+	bind:clientWidth={containerWidth}
+>
 	<div 
-		class="resume-paper mx-auto bg-white text-slate-900 shadow-2xl overflow-hidden flex flex-col"
-		style="width: 210mm; min-height: 297mm;"
+		class="resume-paper mx-auto bg-white text-slate-900 shadow-2xl overflow-hidden flex flex-col transition-transform duration-300 ease-out"
+		style="width: 210mm; min-height: 297mm; --scale: {scale};"
 	>
 		<div class="p-10 md:p-12 h-full flex flex-col">
 			<!-- Header -->
