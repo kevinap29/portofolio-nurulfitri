@@ -5,6 +5,8 @@
 	import Button from '../ui/button.svelte';
 	import { slide } from 'svelte/transition';
 
+	import { PUBLIC_WEB3FORMS_ACCESS_KEY } from '$env/static/public';
+
 	const { contact } = portfolioContent;
 
 	let copiedField = $state<string | null>(null);
@@ -142,7 +144,7 @@
 			<div class="lg:col-span-3 bg-surface border border-surface-border p-8 rounded-sm shadow-sm hover:shadow-lg hover:border-primary/50 transition-all duration-300">
 				<form onsubmit={handleSubmit} class="space-y-6">
 					<!-- Hidden Web3Forms Key (User should replace this) -->
-					<input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+					<input type="hidden" name="access_key" value={PUBLIC_WEB3FORMS_ACCESS_KEY}>
 					<input type="hidden" name="subject" value="New Contact from Nurul Fitri Portfolio">
 					<input type="checkbox" name="botcheck" id="" style="display: none;">
 
