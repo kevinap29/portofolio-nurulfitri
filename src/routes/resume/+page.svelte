@@ -79,9 +79,9 @@
 		class="resume-paper mx-auto bg-white text-slate-900 shadow-2xl overflow-hidden flex flex-col"
 		style="width: 210mm; min-height: 297mm;"
 	>
-		<div class="p-10 md:p-14 h-full flex flex-col">
+		<div class="p-10 md:p-12 h-full flex flex-col">
 			<!-- Header -->
-			<header class="border-b-2 border-slate-900 pb-6 mb-8 flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
+			<header class="section-avoid border-b-2 border-slate-900 pb-6 mb-8 flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
 				<div>
 					<h1 class="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-1">{profile.name}</h1>
 					<p class="text-xl font-bold text-slate-500 uppercase tracking-[0.2em]">{profile.headline}</p>
@@ -106,7 +106,7 @@
 				</div>
 			</header>
 
-			<div class="flex-1 space-y-10">
+			<div class="flex-1 space-y-8">
 				<!-- Summary -->
 				<section class="section-avoid">
 					<h2 class="text-[11px] font-black uppercase tracking-[0.3em] text-slate-400 mb-4 flex items-center gap-3">
@@ -118,9 +118,9 @@
 					</p>
 				</section>
 
-				<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-10">
 					<!-- Left Column -->
-					<div class="md:col-span-1 space-y-10">
+					<div class="md:col-span-1 space-y-8">
 						<!-- Skills -->
 						<section class="section-avoid">
 							<h2 class="text-[11px] font-black uppercase tracking-[0.3em] text-slate-400 mb-5 border-l-4 border-slate-900 pl-3">
