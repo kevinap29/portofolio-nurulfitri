@@ -6,12 +6,13 @@
 	import Button from '$lib/components/ui/button.svelte';
 	import { FileText } from 'lucide-svelte';
 
-	const navLinks = [
-		{ name: 'About', href: '#about' },
-		{ name: 'Experience', href: '#experience' },
-		{ name: 'Education', href: '#education' },
-		{ name: 'Skills', href: '#skills' }
-	];
+	import { i18n } from '$lib/i18n.svelte';
+
+	const navLinks = $derived([
+		{ name: i18n.current === 'id' ? 'Tentang' : 'About', href: '#about' },
+		{ name: i18n.current === 'id' ? 'Pengalaman' : 'Experience', href: '#experience' },
+		{ name: i18n.current === 'id' ? 'Kontak' : 'Contact', href: '#contact' }
+	]);
 </script>
 
 <nav

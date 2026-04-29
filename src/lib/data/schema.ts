@@ -39,11 +39,19 @@ export const SkillSchema = z.object({
 	level: z.string().optional()
 });
 
+export const ContactSchema = z.object({
+	email: z.string().email(),
+	phone: z.string(),
+	location: z.record(z.string(), z.string()),
+	whatsapp: z.string().optional()
+});
+
 export const ContentSchema = z.object({
 	profile: ProfileSchema,
 	experience: z.array(ExperienceSchema),
 	education: z.array(EducationSchema),
-	skills: z.array(SkillSchema)
+	skills: z.array(SkillSchema),
+	contact: ContactSchema
 });
 
 export type Content = z.infer<typeof ContentSchema>;

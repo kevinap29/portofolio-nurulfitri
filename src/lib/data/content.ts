@@ -112,5 +112,14 @@ export const portfolioContent: Content = {
 		{ name: 'Supply Chain Coordination', category: 'Technical' },
 		{ name: 'Communication', category: 'Soft' },
 		{ name: 'Teamwork', category: 'Soft' }
-	]
+	],
+	contact: {
+		email: 'nurulalfitriyany@gmail.com',
+		phone: '0895636898837',
+		location: {
+			id: 'Jakarta / Palembang, Indonesia',
+			en: 'Jakarta / Palembang, Indonesia'
+		},
+		whatsapp: '62895636898837'
+	}
 };
