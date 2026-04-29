@@ -4,6 +4,7 @@
 	import Button from '$lib/components/ui/button.svelte';
 	import { Mail, Phone, MapPin, Printer, ArrowLeft } from 'lucide-svelte';
 	import LinkedIn from '$lib/components/icons/LinkedIn.svelte';
+	import SEO from '$lib/components/SEO.svelte';
 
 	const { profile, experience, education, skills, contact } = portfolioContent;
 
@@ -12,10 +13,10 @@
 	}
 </script>
 
-<svelte:head>
-	<title>{i18n.current === 'id' ? 'Resume' : 'Resume'} | {profile.name}</title>
-	<meta name="robots" content="noindex" />
-</svelte:head>
+<SEO 
+	title="Resume | {profile.name}"
+	description="Professional Resume of Nurul Fitri - Marketing Administration & Retail Operations Specialist"
+/>
 
 <style>
 	@media print {
