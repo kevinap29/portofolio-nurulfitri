@@ -25,7 +25,10 @@
 	</main>
 	<footer class="no-print border-t border-border/40 py-8 text-center text-sm text-muted-foreground">
 		<div class="container mx-auto px-4">
-			<p>&copy; {new Date().getFullYear()} Nurul Fitri. All rights reserved.</p>
+			<p>
+				&copy; {new Date().getFullYear() === 2026 ? '2026' : `2026 - ${new Date().getFullYear()}`}
+				@mainapidev | @kevinap29. All rights reserved.
+			</p>
 		</div>
 	</footer>
 </div>

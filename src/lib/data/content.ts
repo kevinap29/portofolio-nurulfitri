@@ -5,8 +5,8 @@ export const portfolioContent: Content = {
 		name: 'Nurul Fitri',
 		headline: 'Marketing Administration | Retail Operations | Inventory & Sales Support Specialist',
 		bio: {
-			id: 'Seorang profesional di bidang administrasi marketing retail dengan pengalaman dalam mendukung aktivitas penjualan, pengelolaan stok, serta koordinasi distribusi barang. Terbiasa bekerja dengan detail tinggi dalam mengelola data dan memastikan ketersediaan stok berjalan optimal.',
-			en: 'A professional in retail marketing administration with experience in supporting sales activities, stock management, and goods distribution coordination. Accustomed to working with high detail in managing data and ensuring optimal stock availability.'
+			id: 'Saya merupakan profesional di bidang administrasi marketing retail dengan pengalaman dalam mendukung aktivitas penjualan, pengelolaan stok, serta koordinasi distribusi barang ke berbagai toko. Terbiasa bekerja dengan detail tinggi dalam mengelola data, menjadwalkan pengiriman, serta berkomunikasi dengan supplier, customer dan tim sales.\n\nSaya memiliki kemampuan dalam mengolah data penjualan, membuat laporan, serta memastikan ketersediaan stok berjalan optimal untuk mendukung pencapaian target bisnis. Selain itu, saya juga aktif dalam mendukung implementasi program promosi.',
+			en: 'I am a retail marketing administration professional with experience in supporting sales activities, stock management, and coordinating goods distribution to various stores. Accustomed to working with high detail in managing data, scheduling shipments, and communicating with suppliers, customers, and sales teams.\n\nI have the ability to process sales data, create reports, and ensure optimal stock availability to support business target achievement. Additionally, I am active in supporting the implementation of promotional programs.'
 		},
 		avatarUrl: '/images/avatar.jpg',
 		socials: [
@@ -32,16 +32,28 @@ export const portfolioContent: Content = {
 			},
 			description: {
 				id: [
-					'Mengelola dan mengeksekusi program promosi untuk mendukung penjualan produk retail.',
+					'Mengelola dan mengeksekusi program promosi untuk mendukung peningkatan penjualan produk retail.',
 					'Memantau ketersediaan stok serta pergerakan barang di toko.',
-					'Mengkoordinasikan pengiriman barang dan memastikan ketepatan jadwal distribusi.',
-					'Menyusun laporan penjualan dan aktivitas canvassing secara berkala.'
+					'Mengkoordinasikan pengiriman barang ke toko dan memastikan ketepatan jadwal distribusi.',
+					'Berkomunikasi dengan supplier terkait pengadaan barang dan kebutuhan stok.',
+					'Menangani pertanyaan dari tim sales dan toko terkait stok, pengiriman, aplikasi, dan program promosi.',
+					'Menyusun laporan penjualan serta laporan aktivitas canvassing secara berkala.',
+					'Mengatur jadwal distribusi barang canvassing serta menyiapkan dan mencetak dokumen pengiriman (surat jalan).',
+					'Melakukan pencocokan dan validasi data barang masuk dan keluar untuk memastikan akurasi data.',
+					'Menggunakan Microsoft Excel dan Word untuk pengolahan data dan pelaporan.',
+					'Mengoperasikan aplikasi e-commerce untuk mendukung proses penjualan produk toko bangunan.'
 				],
 				en: [
-					'Managing and executing promotional programs to support retail product sales.',
+					'Managing and executing promotional programs to support retail product sales growth.',
 					'Monitoring stock availability and goods movement in stores.',
-					'Coordinating goods shipment and ensuring distribution schedule accuracy.',
-					'Preparing regular sales reports and canvassing activity reports.'
+					'Coordinating goods shipment to stores and ensuring distribution schedule accuracy.',
+					'Communicating with suppliers regarding procurement and stock requirements.',
+					'Handling inquiries from sales teams and stores regarding stock, shipments, applications, and promotional programs.',
+					'Preparing regular sales reports and canvassing activity reports.',
+					'Organizing distribution schedules for canvassing goods and preparing/printing shipping documents (surat jalan).',
+					'Performing matching and validation of incoming and outgoing goods data to ensure accuracy.',
+					'Using Microsoft Excel and Word for data processing and reporting.',
+					'Operating e-commerce applications to support building material product sales.'
 				]
 			}
 		},
@@ -110,6 +122,11 @@ export const portfolioContent: Content = {
 		{ name: 'Retail Operations', category: 'Technical' },
 		{ name: 'Data Analysis (Excel)', category: 'Technical' },
 		{ name: 'Supply Chain Coordination', category: 'Technical' },
+		{ name: 'Reporting & Documentation', category: 'Technical' },
+		{ name: 'Data Entry', category: 'Technical' },
+		{ name: 'Microsoft Excel', category: 'Technical' },
+		{ name: 'Marketing', category: 'Technical' },
+		{ name: 'Administrative Support', category: 'Technical' },
 		{ name: 'Communication', category: 'Soft' },
 		{ name: 'Teamwork', category: 'Soft' }
 	],
