@@ -13,7 +13,7 @@
 </script>
 
 <svelte:head>
-	<link rel="icon" href="/favicon.svg" />
+	<link rel="icon" href="images/avatar.jpg" />
 </svelte:head>
 
 <div class="relative min-h-screen bg-background font-sans antialiased">

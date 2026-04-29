@@ -8,9 +8,9 @@
 
 	function handleSetLocale(lang: string) {
 		if (i18n.current === lang) return;
-		
+
 		isSwitching = lang;
-		
+
 		// Simulate a small delay for visual feedback if the switch is too fast
 		setTimeout(() => {
 			i18n.switchTo(lang as AvailableLanguageTag);
@@ -27,7 +27,9 @@
 			size="sm"
 			onclick={() => handleSetLocale(lang)}
 			disabled={isSwitching !== null}
-			class="uppercase text-xs min-w-[40px] transition-all duration-200 {i18n.current !== lang ? 'hover:text-primary hover:bg-primary/10' : ''}"
+			class="uppercase text-xs min-w-[40px] transition-all duration-200 {i18n.current !== lang
+				? 'hover:text-primary hover:bg-primary/10'
+				: ''}"
 		>
 			{#if isSwitching === lang}
 				<Loader2 class="h-3 w-3 animate-spin" />
@@ -37,4 +39,3 @@
 		</Button>
 	{/each}
 </div>
-

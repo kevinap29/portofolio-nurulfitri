@@ -12,12 +12,14 @@ This document defines the Git and GitHub workflow for the Nurul Fitri Portfolio 
 
 ## 2. Commit Message Standards
 
-We use a simplified version of **Conventional Commits**. Messages should be detailed enough to explain *what* changed, but concise.
+We use a simplified version of **Conventional Commits**. Messages should be detailed enough to explain _what_ changed, but concise.
 
 ### 2.1 Format
+
 `<type>: <description>`
 
 ### 2.2 Types
+
 - **`feat`**: A new feature (e.g., a new component or page).
 - **`fix`**: A bug fix.
 - **`refactor`**: Code changes that neither fix a bug nor add a feature.
@@ -26,6 +28,7 @@ We use a simplified version of **Conventional Commits**. Messages should be deta
 - **`chore`**: Updating dependencies, build scripts, etc.
 
 ### 2.3 Examples
+
 - `feat: implement Svelte 5 Rune-based i18n manager`
 - `fix: wrap CSS variables in hsl() for Tailwind v4 dark mode`
 - `refactor: move theme logic to external global rune`
@@ -38,6 +41,7 @@ We use a simplified version of **Conventional Commits**. Messages should be deta
 Every phase or major feature must be merged into `main` via a Pull Request (PR).
 
 ### 3.1 Steps to Push and Create PR
+
 1. **Verify**: Run `npm run check` and test locally.
 2. **Commit**: Stage and commit all changes using the standards above.
 3. **Push**: `git push origin [branch-name]`
@@ -47,6 +51,7 @@ Every phase or major feature must be merged into `main` via a Pull Request (PR).
    - **Body**: A brief summary of what was accomplished and how it was verified.
 
 ### 3.2 Example Command
+
 ```bash
 gh pr create --base main --title "[Fase 2] Data Layer & Global Components" --body "Implemented data schemas, i18n manager using Runes, and global components (Navbar, ThemeToggle)."
 ```
