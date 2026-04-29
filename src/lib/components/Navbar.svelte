@@ -36,10 +36,10 @@
 		</div>
 
 		<div class="flex items-center gap-2 md:gap-4">
-			<a href={portfolioContent.profile.resumeUrl} target="_blank" rel="noopener noreferrer">
+			<a href="/resume">
 				<Button variant="outline" size="sm" class="gap-2">
 					<FileText class="h-4 w-4" />
-					<span class="hidden sm:inline">Resume</span>
+					<span class="hidden sm:inline">{i18n.current === 'id' ? 'Resume' : 'Resume'}</span>
 				</Button>
 			</a>
 			<div class="h-6 w-px bg-border/50"></div>

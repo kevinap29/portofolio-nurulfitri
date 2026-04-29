@@ -44,8 +44,7 @@
 			</Button>
 			
 			<Button 
-				href={profile.resumeUrl} 
-				target="_blank" 
+				href="/resume" 
 				variant="outline" 
 				class="gap-2"
 			>
